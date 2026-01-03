@@ -23,20 +23,23 @@ const Hero = () => {
           in Georgia.
         </h1>
 
-        {/* Subheadline - delayed, lighter motion */}
+        {/* Subheadline */}
         <p className="animate-hero-fade-delay-2 text-lg md:text-xl text-muted-foreground/80 font-light tracking-wide max-w-lg mb-16 leading-relaxed">
           A free, student-led hackathon. One day. Real projects. No experience required.
         </p>
 
-        {/* Single CTA */}
-        <div className="animate-hero-fade-delay-3">
+        {/* CTAs */}
+        <div className="animate-hero-fade-delay-3 flex flex-col sm:flex-row items-start gap-4">
           <Button variant="hero" size="xl" className="hover-glow">
             Register Now
+          </Button>
+          <Button variant="outline" size="xl" className="text-muted-foreground hover:text-foreground">
+            Join Newsletter
           </Button>
         </div>
       </div>
 
-      {/* Scroll indicator - subtle */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-16 left-1/2 -translate-x-1/2 animate-hero-fade-delay-3">
         <div className="flex flex-col items-center gap-3 text-muted-foreground/40">
           <span className="text-[10px] tracking-[0.3em] uppercase font-light">Scroll</span>
