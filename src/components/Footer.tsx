@@ -1,19 +1,12 @@
 const Footer = () => {
   return (
-    <footer className="py-12 px-6 border-t border-border">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* Logo & Copyright */}
-        <div className="text-center md:text-left">
-          <div className="text-lg font-bold tracking-tight mb-2">
-            <span className="text-gradient-peach">Peach</span>State Hacks
-          </div>
-          <p className="text-sm text-muted-foreground">
-            © 2026 PeachState Hacks. Built by students, for students.
-          </p>
-        </div>
+    <footer className="py-12 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <p className="text-sm text-muted-foreground font-light tracking-wide">
+          © 2026 PeachState Hacks
+        </p>
 
-        {/* Links */}
-        <div className="flex items-center gap-6 text-sm text-muted-foreground">
+        <div className="flex items-center gap-6 text-sm text-muted-foreground font-light">
           <a href="#" className="hover:text-foreground transition-colors duration-300">
             Instagram
           </a>
