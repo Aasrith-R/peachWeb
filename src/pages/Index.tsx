@@ -1,13 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Categories from "@/components/Categories";
+import WhyAttend from "@/components/WhyAttend";
+import EventDetails from "@/components/EventDetails";
+import Experience from "@/components/Experience";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <Navbar />
+      <Hero />
+      <section id="about">
+        <About />
+      </section>
+      <section id="categories">
+        <Categories />
+      </section>
+      <WhyAttend />
+      <section id="details">
+        <EventDetails />
+      </section>
+      <Experience />
+      <section id="register">
+        <FinalCTA />
+      </section>
+      <Footer />
+    </main>
   );
 };
 
