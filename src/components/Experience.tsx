@@ -1,18 +1,20 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Experience = () => {
-  const { ref, isVisible } = useScrollAnimation(0.3);
+  const { ref, isVisible } = useScrollAnimation(0.4);
 
   return (
-    <section className="py-48 px-6">
-      <div ref={ref} className="max-w-4xl mx-auto text-center">
-        <div className={`scroll-scale ${isVisible ? 'visible' : ''}`}>
-          <p className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light leading-relaxed tracking-wide">
+    <section className="py-56 px-6 snap-section">
+      <div ref={ref} className="max-w-3xl mx-auto text-center">
+        <div className={`scroll-reveal-scale ${isVisible ? 'visible' : ''}`}>
+          <p className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed tracking-wide text-muted-foreground/70">
             Fast-paced but supportive.
-            <br />
-            <span className="text-foreground font-display font-medium">Ambitious but accessible.</span>
-            <br />
-            <span className="text-primary">First hackathon? Perfect.</span>
+          </p>
+          <p className="text-xl md:text-2xl lg:text-3xl font-display font-medium leading-relaxed tracking-wide text-foreground/90 mt-2">
+            Ambitious but accessible.
+          </p>
+          <p className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed tracking-wide mt-6">
+            <span className="text-gradient-peach">First hackathon? Perfect.</span>
           </p>
         </div>
       </div>
