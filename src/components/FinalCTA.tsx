@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
+const REGISTRATION_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdLql9wxVoGHg3zOdDFhA1pZpny6IGjp_230U4bbQtd0-QF-g/viewform";
+
 const FinalCTA = () => {
   const { ref: headingRef, isVisible: headingVisible } = useScrollAnimation(0.3);
   const { ref: ctaRef, isVisible: ctaVisible } = useScrollAnimation(0.3);
@@ -25,8 +28,10 @@ const FinalCTA = () => {
           className={`scroll-reveal ${ctaVisible ? 'visible' : ''}`}
           style={{ transitionDelay: '0.2s' }}
         >
-          <Button variant="hero" size="xl" className="hover-glow">
-            Register Now
+          <Button asChild variant="hero" size="xl" className="hover-glow">
+            <a href={REGISTRATION_URL} target="_blank" rel="noreferrer">
+              Register Now
+            </a>
           </Button>
         </div>
 

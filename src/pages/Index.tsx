@@ -1,8 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Categories from "@/components/Categories";
-import WhyAttend from "@/components/WhyAttend";
 import EventDetails from "@/components/EventDetails";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -19,22 +16,6 @@ const Index = () => {
       <section id="details">
         <EventDetails />
       </section>
-      
-      <SectionDivider />
-      
-      <section id="about">
-        <About />
-      </section>
-      
-      <SectionDivider />
-      
-      <section id="categories">
-        <Categories />
-      </section>
-      
-      <SectionDivider />
-      
-      <WhyAttend />
       
       <SectionDivider />
       
